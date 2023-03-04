@@ -1483,3 +1483,15 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
 }
 
 /***** End contact section *****/
+
+.zenkafako-bot {
+position: fixed;
+right: 8px;
+bottom: 140px;
+width: 80px;
+transition: all 0.3s ease-in-out 0s;
+}
+
+.zenkafako-bot .icon-zenkafako {
+width: 100%;
+}
