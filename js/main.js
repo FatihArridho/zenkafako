@@ -277,3 +277,25 @@ window.addEventListener("load", () =>{
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
+
+const whatsappIcon = document.querySelector(".zenkafako-bot")
+let showTimeout = null;
+
+window.addEventListener('scroll', function() {
+
+hideWhatsAppIcon();
+
+if (showTimeout !== null) {
+clearTimeout(showTimeout);
+}
+
+showTimeout = setTimeout(showWhatsAppIcon, 100);
+});
+
+function hideWhatsAppIcon() {
+whatsappIcon.style.right = '-100px';
+}
+
+function showWhatsAppIcon() {
+whatsappIcon.style.right = '8px';
+}
